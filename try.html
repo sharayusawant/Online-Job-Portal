@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-15 {
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+}
+
+.col-35 {
+    float: left;
+    width: 38.5%;
+    margin-top: 6px;
+
+}
+
+.col-45{
+    float: left;
+    width: 3%;
+    margin-top: 6px;
+
+}
+
+
+.col-50 {
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+}
+
+.col-65{
+    float: left;
+    width: 38.5%;
+    margin-top: 6px;
+}
+
+.col-75{
+    float: left;
+    width: 12.6%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-15, .col-35,.col-45,.col-50, .col-65, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<h2>My Profile</h2>
+<p>
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-15">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+       <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-65">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+
+   <div class="row">
+      <div class="col-15">
+        <label for="Age">Age</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="Age" name="Age" placeholder="Age must be above 18 years">
+      </div>
+    <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="Gender">Gender</label>
+      </div>
+      <div class="col-65">
+        <select id="Gender" name="Gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Transgender">Transgender</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-15">
+        <label for="street">Street</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="street" name="street" placeholder="Enter street ">
+      </div>
+   <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="city">City</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="city" placeholder="Enter city ">
+      </div>
+      <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="zipcode">Zipcode</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="zipcode" name="zipcode" placeholder="Enter zipcode ">
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-15">
+        <label for="contact">Contact</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="contact" name="contact" placeholder=" ">
+      </div>
+   <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-65">
+        <input type="text" id="email" name="email" placeholder="Enter a valid email address">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-15">
+        <label for="qualification">Qualification</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="qualification" name="qualification" placeholder=" ">
+      </div>
+    <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="ploc">Preferred Location</label>
+      </div>
+      <div class="col-65">
+        <input type="text" id="ploc" name="ploc" placeholder=" ">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-15">
+        <label for="jobpref1">Job Profile Preferences</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="jobpref1" name="jobpref1" placeholder="Preference 1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-15">
+        <label for="jobpref2"></label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="jobpref2" name="jobpref2" placeholder="Preference 2 ">
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+
+    
+    
+  </form>
+</div>
+
+</body>
+</html>
