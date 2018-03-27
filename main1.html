@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Header/logo Title */
+.header {
+    padding: 10px;
+    text-align: center;
+    background:black;
+    color: white;
+}
+/* Style the top navigation bar */
+.navbar {
+   overflow: hidden;
+    background-color: green;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+   text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
+.container .btn {
+    position: bottom;
+    top: 50%;
+    left: 60%;
+/*   transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);*/
+    background: rgba(0, 0, 0, 0.5);
+    color: #555;
+    color: white;
+    font-size:20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.container .btn:hover {
+    background-color: black;
+ 
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<center><h1>VS3.com</h1></center>
+<center><p><h2>YOUR ULTIMATE PLACEMENT GURU</h2></p></center>
+</div>
+
+<div class="navbar">
+  <a href="#">MAIN PAGE</a>
+  <a href="#">WANT TO BE HIRED</a>
+  <a href="#">WANT TO HIRE</a>
+</div>
+
+<div class="row">
+  <div class="column" style="background-image:url(s2.png);">
+    <h2>Column 1</h2>
+	<div class="container">
+	  <button class="btn"><span>WANT TO BE HIRED </span></button>
+	</div>
+  </div>
+  <div class="column" style="background-image:url(e3.png);">
+    <h2>Column 2</h2>
+	<div class="container">
+	  <button class="btn"><span>WANT TO HIRE </span></button>
+	</div>
+
+  </div>
+</div>
+
+</body>
+</html>
