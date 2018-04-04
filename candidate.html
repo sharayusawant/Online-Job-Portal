@@ -5,11 +5,12 @@
 body, html {
     height: 100%;
     margin: 0;
+	  box-sizing: border-box;
 }
 
 .bg {
     /* The image used */
-    background-image: url("vacant.jpg");
+    background-image: url("college.png");
 
     /* Full height */
     height: 100%; 
@@ -19,9 +20,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-* {
-    box-sizing: border-box;
-}
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -56,6 +55,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     padding: 20px;
 }
+
 .container .content {
     position: absolute;
     bottom: 0;
@@ -90,7 +90,7 @@ input[type=submit]:hover {
     margin-top: 6px;
 }
 .col-75{
-    float: right;
+    float: left;
     width: 12.6%;
     margin-top: 6px;
 }
@@ -124,83 +124,140 @@ input[type=submit]:hover {
 </style>
 </head>
 <body>
-
-<div class="bg">
 <div class="navbar">
  <a href="aboutus.html">ABOUT US</a>
   <a href="candidate.html">WANT TO BE HIRED</a>
   <a href="main1.html">MAIN PAGE</a>
   <a href="company.html">WANT TO HIRE</a>
-  <a href="meet.html">MEET THE TEAM</a>
+  <a href="meet.html">MEET THE TEAM</a>  
 </div>
-
+<div class="bg">
 <div class="container">
-<div class="content">
-<h2>Job Profile</h2>
-<p>
+	<div class="content">
+	<h2>My Profile</h2>
+	<p>
+	
   <form action="/action_page.php">
     <div class="row">
       <div class="col-15">
-        <label for="jname">Job</label>
+        <label for="fname">First Name</label>
       </div>
       <div class="col-35">
-        <input type="text" id="jname" name="job" placeholder="">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
       </div>
        <div class="col-45">
         <label for="space"></label>
       </div>
       <div class="col-50">
-        <label for="salary">Salary</label>
+        <label for="lname">Last Name</label>
       </div>
       <div class="col-65">
-         <input type="text" id="salary" name="salary" placeholder="Enter salary per month">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
       </div>
     </div>
 
    <div class="row">
       <div class="col-15">
-       <label for="aboutj">About Job</label>
+        <label for="Age">Age</label>
       </div>
       <div class="col-35">
-         <textarea id="aboutj" name="aboutjob" placeholder="enter job description here.." style="height:50px"></textarea>
+        <input type="text" id="Age" name="Age" placeholder="Age must be above 18 years">
       </div>
     <div class="col-45">
         <label for="space"></label>
       </div>
       <div class="col-50">
-        <label for="skills">Skills Required</label>
+        <label for="Gender">Gender</label>
       </div>
       <div class="col-65">
-        <textarea id="skills" name="skillsreq" placeholder="" style="height:50px"></textarea>
+        <select id="Gender" name="Gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Transgender">Transgender</option>
+        </select>
       </div>
     </div>
 
     <div class="row">
       <div class="col-15">
-        <label for="loc">Location</label>
+        <label for="street">Street</label>
       </div>
       <div class="col-35">
-        <input type="text" id="loc" name="location" placeholder="enter job location">
+        <input type="text" id="street" name="street" placeholder="Enter street ">
       </div>
    <div class="col-45">
         <label for="space"></label>
       </div>
       <div class="col-50">
-        <label for="vac">No. of Vacancies</label>
+        <label for="city">City</label>
       </div>
-      <div class="col-65">
-        <input type="text" id="vac" name="no_of_vac" placeholder="Enter total no. of vacancies ">
+      <div class="col-75">
+        <input type="text" id="city" name="city" placeholder="Enter city ">
       </div>
-      
+      <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="zipcode">Zipcode</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="zipcode" name="zipcode" placeholder="Enter zipcode ">
+      </div>
     </div>
 
-    
-       
-     
-    
-      <div class="row">
-      <div class="col-75">
-       <input type="submit" value="Add">
+     <div class="row">
+      <div class="col-15">
+        <label for="contact">Contact</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="contact" name="contact" placeholder=" ">
+      </div>
+   <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-65">
+        <input type="text" id="email" name="email" placeholder="Enter a valid email address">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-15">
+        <label for="qualification">Qualification</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="qualification" name="qualification" placeholder=" ">
+      </div>
+    <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="ploc">Preferred Location</label>
+      </div>
+      <div class="col-65">
+        <input type="text" id="ploc" name="ploc" placeholder=" ">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-15">
+        <label for="jobpref1">Job Profile Preferences</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="jobpref1" name="jobpref1" placeholder="Preference 1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-15">
+        <label for="jobpref2"></label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="jobpref2" name="jobpref2" placeholder="Preference 2 ">
+      </div>
+      <div class="col-65">
+       <input type="submit" value="Submit">
       </div>
     </div>
 
@@ -208,7 +265,7 @@ input[type=submit]:hover {
     
     
   </form>
-</div>
+	</div>
 </div>
 </div>
 </body>

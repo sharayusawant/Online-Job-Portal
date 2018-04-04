@@ -9,7 +9,7 @@ body, html {
 
 .bg {
     /* The image used */
-    background-image: url("vacant.jpg");
+    background-image: url("employee.jpg");
 
     /* Full height */
     height: 100%; 
@@ -49,11 +49,23 @@ input[type=submit] {
     cursor: pointer;
     float: right;
 }
+a:link, a:visited {
+    background-color: #45a049;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: green;
+}
 input[type=submit]:hover {
     background-color: #45a049;
 }
 .container {
     border-radius: 5px;
+  
     padding: 20px;
 }
 .container .content {
@@ -66,6 +78,11 @@ input[type=submit]:hover {
 }
 .col-15 {
     float: left;
+    width: 10%;
+    margin-top: 6px;
+}
+.col-1 {
+    float: right;
     width: 10%;
     margin-top: 6px;
 }
@@ -90,7 +107,7 @@ input[type=submit]:hover {
     margin-top: 6px;
 }
 .col-75{
-    float: right;
+    float: left;
     width: 12.6%;
     margin-top: 6px;
 }
@@ -125,7 +142,6 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<div class="bg">
 <div class="navbar">
  <a href="aboutus.html">ABOUT US</a>
   <a href="candidate.html">WANT TO BE HIRED</a>
@@ -133,78 +149,116 @@ input[type=submit]:hover {
   <a href="company.html">WANT TO HIRE</a>
   <a href="meet.html">MEET THE TEAM</a>
 </div>
-
+<div class="bg">
 <div class="container">
-<div class="content">
-<h2>Job Profile</h2>
-<p>
+	<div class="content">
+	
+	<h2>Company Profile</h2>
+	<p>
   <form action="/action_page.php">
     <div class="row">
       <div class="col-15">
-        <label for="jname">Job</label>
+        <label for="cname">Company Name</label>
       </div>
       <div class="col-35">
-        <input type="text" id="jname" name="job" placeholder="">
+        <input type="text" id="cname" name="companyname" placeholder=" ">
       </div>
        <div class="col-45">
         <label for="space"></label>
       </div>
       <div class="col-50">
-        <label for="salary">Salary</label>
+        <label for="reg">Registration ID</label>
       </div>
       <div class="col-65">
-         <input type="text" id="salary" name="salary" placeholder="Enter salary per month">
+        <input type="text" id="reg" name="registrationId" placeholder="">
       </div>
     </div>
 
    <div class="row">
       <div class="col-15">
-       <label for="aboutj">About Job</label>
+        <label for="desc">Description</label>
       </div>
       <div class="col-35">
-         <textarea id="aboutj" name="aboutjob" placeholder="enter job description here.." style="height:50px"></textarea>
+        <textarea id="desc" name="description" placeholder="Write something.." style="height:50px"></textarea>
       </div>
     <div class="col-45">
         <label for="space"></label>
       </div>
       <div class="col-50">
-        <label for="skills">Skills Required</label>
+        <label for="WebURL">Website URL</label>
       </div>
       <div class="col-65">
-        <textarea id="skills" name="skillsreq" placeholder="" style="height:50px"></textarea>
+        <input type="text" id="url" name="WebURL" placeholder="Enter a valid Website URL">
       </div>
     </div>
 
     <div class="row">
       <div class="col-15">
-        <label for="loc">Location</label>
+        <label for="street">Street</label>
       </div>
       <div class="col-35">
-        <input type="text" id="loc" name="location" placeholder="enter job location">
+        <input type="text" id="street" name="street" placeholder="Enter street ">
       </div>
    <div class="col-45">
         <label for="space"></label>
       </div>
       <div class="col-50">
-        <label for="vac">No. of Vacancies</label>
+        <label for="city">City</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="city" placeholder="Enter city ">
+      </div>
+      <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="zipcode">Zipcode</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="zipcode" name="zipcode" placeholder="Enter zipcode ">
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-15">
+        <label for="contact">Contact</label>
+      </div>
+      <div class="col-35">
+        <input type="text" id="contact" name="contact" placeholder=" ">
+      </div>
+   <div class="col-45">
+        <label for="space"></label>
+      </div>
+      <div class="col-50">
+        <label for="email">Email</label>
       </div>
       <div class="col-65">
-        <input type="text" id="vac" name="no_of_vac" placeholder="Enter total no. of vacancies ">
+        <input type="text" id="email" name="email" placeholder="Enter a valid email address">
       </div>
+    </div>
+
+    
+
+    <div class="row">
       
+      <div class="col-1">
+	<input type="submit" value="Update and Save">
+	</div>
+    </div>
+    <div class="row">
+      
+     <div class="col-1">
+        <input type="submit" value="Submit">
+        </div>
+	<div class="col-75">
+	<a href="vacancy.html">Add vacancy</a>
+	</div>
     </div>
 
-    
+    <div class="row">
        
-     
-    
-      <div class="row">
-      <div class="col-75">
-       <input type="submit" value="Add">
-      </div>
     </div>
 
-    
     
     
   </form>

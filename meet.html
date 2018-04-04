@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.navbar {
+   overflow: hidden;
+    background-color: green;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+   text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <a href="aboutus.html">ABOUT US</a>
+  <a href="candidate.html">WANT TO BE HIRED</a>
+  <a href="main1.html">MAIN PAGE</a>
+  <a href="company.html">WANT TO HIRE</a>
+  <a href="meet.html">MEET THE TEAM</a>
+</div>
+
+<h2>"Meet The Team"</h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="an1.png" alt="Srushti Patel" style="width:100%">
+		<div class="container">
+		<div class="content">
+        <h2>Srushti Patel</h2>
+        <p class="title">jo kiya woh daal dege</p>
+        <p>161081008</p>
+       </div>
+		</div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="an2.png" alt="Sharayu Sawant" style="width:100%">
+		<div class="container">
+		<div class="content">
+        <h2>Sharayu Sawant</h2>
+        <p class="title">jo kiya woh daal dege</p>
+        <p>161081009</p>
+        </div>
+		</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="an3.png" alt="Varsha Kulkarni" style="width:100%">
+			<div class="container">
+			<div class="content">
+			<h2>Varsha Kulkarni</h2>
+			<p class="title">jo kiya woh daal dege</p>
+			<p>161081040</p>
+        </div>
+		</div>
+    </div>
+  </div>
+	<div class="column">
+		<div class="card">
+			<img src="an4.png" alt="Snoviya Dcunha" style="width:100%">
+			<div class="container">
+			<div class="content">
+				<h2>Snoviya Dcunha</h2>
+				<p class="title">jo kiya woh daal dege</p>
+				<p>161081052</p>
+			</div>
+			</div>
+		</div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
